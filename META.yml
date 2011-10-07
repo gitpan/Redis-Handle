@@ -1,0 +1,27 @@
+---
+abstract: 'Tie::Handle interface for Redis queues'
+author:
+  - 'Traian Nedelea <tron at cpan.org>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112150'
+license: unrestricted
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Redis-Handle
+no_index: {}
+requires:
+  AnyEvent::Redis: 1.023
+  Carp: 1.20
+  Redis: 1.904
+  perl: 5.006
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: https://github.com/tron1point0/redis-handle/issues
+  homepage: http://search.cpan.org/dist/Redis-Handle
+  repository: git://github.com/tron1point0/redis-handle.git
+version: 0.1

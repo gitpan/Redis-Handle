@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST
+META.json
+META.yml
+Makefile.PL
+README
+README.md
+dist.ini
+lib/Redis/Handle.pm
