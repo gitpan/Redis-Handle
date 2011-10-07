@@ -22,7 +22,7 @@
       },
       "runtime" : {
          "requires" : {
-            "AnyEvent::Redis" : "1.023",
+            "AnyEvent::Redis" : "0.23",
             "Carp" : "1.20",
             "Redis" : "1.904",
             "perl" : "5.006",
@@ -31,7 +31,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/tron1point0/redis-handle/issues"
@@ -43,6 +43,6 @@
          "web" : "https://github.com/tron1point0/redis-handle"
       }
    },
-   "version" : "0.1"
+   "version" : "0.1.1"
 }
 

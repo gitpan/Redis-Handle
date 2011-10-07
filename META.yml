@@ -14,7 +14,7 @@ meta-spec:
 name: Redis-Handle
 no_index: {}
 requires:
-  AnyEvent::Redis: 1.023
+  AnyEvent::Redis: 0.23
   Carp: 1.20
   Redis: 1.904
   perl: 5.006
@@ -24,4 +24,4 @@ resources:
   bugtracker: https://github.com/tron1point0/redis-handle/issues
   homepage: http://search.cpan.org/dist/Redis-Handle
   repository: git://github.com/tron1point0/redis-handle.git
-version: 0.1
+version: 0.1.1

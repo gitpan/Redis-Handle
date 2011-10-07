@@ -20,13 +20,13 @@ my %WriteMakefileArgs = (
   "LICENSE" => "unrestricted",
   "NAME" => "Redis::Handle",
   "PREREQ_PM" => {
-    "AnyEvent::Redis" => "1.023",
+    "AnyEvent::Redis" => "0.23",
     "Carp" => "1.20",
     "Redis" => "1.904",
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.1",
+  "VERSION" => "0.1.1",
   "test" => {
     "TESTS" => ""
   }

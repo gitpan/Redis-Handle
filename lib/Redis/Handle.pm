@@ -5,7 +5,7 @@ use Carp;
 use Redis;
 use AnyEvent::Redis;
 
-our $VERSION = '0.1'; # VERSION
+our $VERSION = '0.1.1'; # VERSION
 # ABSTRACT: Tie::Handle interface for Redis queues
 
 # use Data::Dump qw(pp);
