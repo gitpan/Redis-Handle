@@ -6,7 +6,7 @@ build_requires: {}
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112150'
+generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112150'
 license: unrestricted
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,4 +24,4 @@ resources:
   bugtracker: https://github.com/tron1point0/redis-handle/issues
   homepage: http://search.cpan.org/dist/Redis-Handle
   repository: git://github.com/tron1point0/redis-handle.git
-version: 0.1.1
+version: 0.1.2

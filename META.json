@@ -4,7 +4,7 @@
       "Traian Nedelea <tron at cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "unrestricted"
    ],
@@ -43,6 +43,6 @@
          "web" : "https://github.com/tron1point0/redis-handle"
       }
    },
-   "version" : "0.1.1"
+   "version" : "0.1.2"
 }
 
