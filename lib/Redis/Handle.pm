@@ -5,7 +5,7 @@ use Carp;
 use Redis;
 use AnyEvent::Redis;
 
-our $VERSION = '0.1.2'; # VERSION
+our $VERSION = '0.2.0'; # VERSION
 # ABSTRACT: Tie::Handle interface for Redis queues
 
 # use Data::Dump qw(pp);
@@ -14,14 +14,14 @@ our $VERSION = '0.1.2'; # VERSION
 
 Redis::Handle - A filehandle tie for a Redis queue
 
-=head1 SYNOPSYS
+=head1 SYNOPSIS
 
     tie *REDIS, 'Redis::Handle';
     print REDIS "Foo bar baz\n";
     print while <REDIS>;        # Prints "Foo bar baz\n"
     
     print REDIS "Foo", "Bar";
-    my @baz = <REDIS>           # @baz is now ("Foo","Bar")
+    my @baz = <REDIS>;          # @baz is now ("Foo","Bar")
     
     print REDIS "Foo", "Bar";
     print <REDIS>;              # Prints "Foo"
@@ -48,16 +48,20 @@ Ties the filehandle to the clientId in Redis.
 =head3 Usage
 
     tie *CLIENT, "Redis::Handle", $clientId;
-
+    
     tie *CLIENT, 'Redis::Handle', $clientId,
         timeout => 100,
         host => 'example.com',
         port => 5800;
+    
+    # pass an existing Redis connection
+    tie *CLIENT, 'Redis::Handle', $clientId, $redis;
 
 =cut
 
     sub TIEHANDLE {
         my ($class,$clientId) = (+shift,+shift);
+        $redis = shift if ref $_[0];
         %redis = @_;
         $redis ||= Redis->new(%redis);
 
